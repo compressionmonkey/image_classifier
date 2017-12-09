@@ -10,7 +10,7 @@ The model is a Convolutional Neural Network that helps for image recognition.
 
 ![Alt text](https://4.bp.blogspot.com/-TMOLlkJBxms/Vt3HQXpE2cI/AAAAAAAAA8E/7X7XRFOY6Xo/s1600/image03.png)
 
-Our goal will not be to build from scratch but use the model to retrain for detecting male or female.
+Our goal will not be to build from scratch but use the model to retrain for detecting shapes.
 
 clone the pre-trained ImageNet data set
 ```
@@ -35,11 +35,12 @@ Clone the flowing url by using this terminal command:
 git clone https://github.com/koflerm/tensorflow-image-classifier.git
 ```
 
+Use [Fatkun Batch downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf) to get datasets.
 You are required to use this model for retraining.
 
 Make sure to look out for the files in this model.
 
-Create a directory called:
+Create a directory called `training_dataset` to add all images as necessary.
 ```
 /
 --- /training_dataset
@@ -67,4 +68,10 @@ Test it by typing:
 
 ```
 python classify.py <FileName>.jpg
+```
+
+You should get a result like this:
+
+```
+![Alt text](https://cdn-images-1.medium.com/max/1600/1*NvTR7MECXqsaIVNwov_fBw.png)
 ```
