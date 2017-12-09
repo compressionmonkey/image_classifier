@@ -49,4 +49,11 @@ Create a directory called:
 |         square3.jpg
 |         ...
 ```
+Use the `train.sh` from the cloned directory to start the retraining process.
 
+Remember that this will allow for 90 % accuracy in prediction which is a good accuracy rate.
+
+After training:
+```
+python classify.py px0.jpg
+```
