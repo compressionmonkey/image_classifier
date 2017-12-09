@@ -44,12 +44,12 @@ Create a directory called:
 /
 --- /training_dataset
 |    |
-|    --- /Male
+|    --- /Circle
 |    |    circle1.jpg
 |    |    circle_small_red.png
 |    |    ...
 |    |
-|    --- /Female
+|    --- /Square
 |         square.jpg
 |         square3.jpg
 |         ...
@@ -66,5 +66,5 @@ After re-training the model, it’s now time to test the model.
 Test it by typing:
 
 ```
-python classify.py px0.jpg
+python classify.py <FileName>.jpg
 ```
