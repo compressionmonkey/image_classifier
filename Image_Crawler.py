@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 im = Image.open("File1.jpg")
-outpath = 'Datasets'
+outpath = 'training_dataset'
 width, height = im.size
 print(im.size)
 if not os.path.exists(outpath):
@@ -28,7 +28,7 @@ if (left, right <= width and upper, lower <= height):
         if (left != 1900 and right != 1980):
             differentnum = 'px' + str(startingnumber) + '.jpg'
 
-            filename = 'Datasets/' + differentnum
+            filename = 'training_dataset/' + differentnum
             box = (left, upper, right, lower)
             im2 = im.crop(box)
             im2.save(filename)
@@ -43,7 +43,7 @@ if (left, right <= width and upper, lower <= height):
             startingnumber += 1
             differentnum = 'px' + str(startingnumber) + '.jpg'
 
-            filename = 'Datasets/' + differentnum
+            filename = 'training_dataset/' + differentnum
             box = (left,upper,right,lower)
             im2 = im.crop(box)
             im2.save(filename)
@@ -60,7 +60,7 @@ if (left, right <= width and upper, lower <= height):
                 startingnumber = 4
                 differentnum = 'px' + str(startingnumber) + '.jpg'
 
-                filename = 'Datasets/' + differentnum
+                filename = 'training_dataset/' + differentnum
                 box = (left, upper, right, lower)
                 im2 = im.crop(box)
                 im2.save(filename)
@@ -75,7 +75,7 @@ if (left, right <= width and upper, lower <= height):
                 startingnumber += 1
                 differentnum = 'px' + str(startingnumber) + '.jpg'
 
-                filename = 'Datasets/' + differentnum
+                filename = 'training_dataset/' + differentnum
                 box = (left, upper, right, lower)
                 im2 = im.crop(box)
                 im2.save(filename)
