@@ -72,6 +72,4 @@ python classify.py <FileName>.jpg
 
 You should get a result like this:
 
-```
 ![Alt text](https://cdn-images-1.medium.com/max/1600/1*NvTR7MECXqsaIVNwov_fBw.png)
-```
