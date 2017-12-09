@@ -11,9 +11,9 @@ if not os.path.exists(outpath):
 global left, upper, right, lower
 #these specify the position of the file
 left =400 #+ 1500 #400
-upper=10 + 320
+upper=10 #+ 320
 right=480 #+ 1500
-lower=120 + 320
+lower=120 #+ 320
 box = (left,upper,right,lower)
 im2 = im.crop(box)
 im2.save('px.jpg')
@@ -49,12 +49,13 @@ if (left, right <= width and upper, lower <= height):
             im2.save(filename)
             im2.show()
             print(box)
-        if (left >= 1900 and right >= 1980):
-            print(left,right)
+        if (left <= 1900 and right <= 1980):
+
             left = 400
             upper = 10 + 320
             right = 480
             lower = 120 + 320
+
             for Yposition in range(4):
                 startingnumber = 4
                 differentnum = 'px' + str(startingnumber) + '.jpg'
@@ -64,7 +65,7 @@ if (left, right <= width and upper, lower <= height):
                 im2 = im.crop(box)
                 im2.save(filename)
                 im2.show()
-                print(box)
+                print("Why am I here", box)
 
                 left = left + 500
                 # upper makes height smaller. Adding value to it reduces the height
