@@ -31,9 +31,9 @@ custard apple (score = 0.00149)
 earthstar (score = 0.00127)
 ```
 Clone the flowing url by using this terminal command:
-
+```
 git clone https://github.com/koflerm/tensorflow-image-classifier.git
-
+```
 Create a directory called:
 ```
 /
