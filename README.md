@@ -34,6 +34,11 @@ Clone the flowing url by using this terminal command:
 ```
 git clone https://github.com/koflerm/tensorflow-image-classifier.git
 ```
+
+You are required to use this model for retraining.
+
+Make sure to look out for the files in this model.
+
 Create a directory called:
 ```
 /
@@ -51,9 +56,15 @@ Create a directory called:
 ```
 Use the `train.sh` from the cloned directory to start the retraining process.
 
+![Alt text](https://cdn-images-1.medium.com/max/1600/1*_pW0vpQRgFXxHkOPMGqRZw.png)
+
 Remember that this will allow for 90 % accuracy in prediction which is a good accuracy rate.
 
-After training:
+The retrained labels, -graphs and the training summary will be saved in a folder named tf_files.
+
+After re-training the model, it’s now time to test the model.
+Test it by typing:
+
 ```
 python classify.py px0.jpg
 ```
